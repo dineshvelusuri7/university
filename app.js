@@ -3,7 +3,7 @@
       container.textContent = "Loading...";
 
       try {
-        const response = await fetch(`http://universities.hipolabs.com/search?country=${encodeURIComponent(country)}`);
+        const response = await fetch(`https://universities.hipolabs.com/search?country=${encodeURIComponent(country)}`);
 
         if (!response.ok) {
           throw new Error(`HTTP error: ${response.status}`);
@@ -54,3 +54,4 @@
       }
     });
   
+
